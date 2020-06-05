@@ -13,3 +13,7 @@ module "UserManagement" {
 module "ServerlessBackend" {
   source = "./3_ServerlessBackend"
 }
+
+module "RESTfulAPIs" {
+  source = "./4_RESTfulAPIs"
+}
