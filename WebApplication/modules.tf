@@ -1,3 +1,3 @@
-module "0_Setup" {
+module "Setup" {
   source = "./0_Setup"
 }
