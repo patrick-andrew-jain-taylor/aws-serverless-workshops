@@ -16,5 +16,6 @@ module "ServerlessBackend" {
 
 module "RESTfulAPIs" {
   source = "./4_RESTfulAPIs"
+  invoke_arn = module.ServerlessBackend.invoke_arn
   provider_arns = [module.UserManagement.arn]
 }
