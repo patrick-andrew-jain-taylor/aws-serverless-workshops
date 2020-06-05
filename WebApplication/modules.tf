@@ -9,3 +9,7 @@ module "StaticWebHosting" {
 module "UserManagement" {
   source = "./2_UserManagement"
 }
+
+module "ServerlessBackend" {
+  source = "./3_ServerlessBackend"
+}
