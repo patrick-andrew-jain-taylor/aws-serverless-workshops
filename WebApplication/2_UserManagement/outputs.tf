@@ -1,3 +1,3 @@
-output "name" {
-  value = aws_cognito_user_pool.this.name
+output "arn" {
+  value = aws_cognito_user_pool.this.arn
 }
