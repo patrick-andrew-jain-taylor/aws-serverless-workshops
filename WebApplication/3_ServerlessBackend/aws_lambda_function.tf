@@ -6,7 +6,7 @@ data "archive_file" "this" {
 
 resource "aws_lambda_function" "this" {
   function_name = "RequestUnicorn"
-  handler = "exports.handler"
+  handler = "requestUnicorn.handler"
   role = aws_iam_role.this.arn
   runtime = "nodejs10.x"
   filename = data.archive_file.this.output_path
