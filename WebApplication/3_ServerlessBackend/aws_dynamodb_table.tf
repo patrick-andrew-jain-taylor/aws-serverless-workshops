@@ -4,6 +4,6 @@ resource "aws_dynamodb_table" "this" {
 
   attribute {
     name = "hash_key"
-    type = "string"
+    type = "S"
   }
 }
