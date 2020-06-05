@@ -16,4 +16,5 @@ module "ServerlessBackend" {
 
 module "RESTfulAPIs" {
   source = "./4_RESTfulAPIs"
+  provider_arns = [module.UserManagement.name]
 }
