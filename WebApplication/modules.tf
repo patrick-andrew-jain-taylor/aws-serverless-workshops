@@ -5,3 +5,7 @@ module "Setup" {
 module "StaticWebHosting" {
   source = "./1_StaticWebHosting"
 }
+
+module "UserManagement" {
+  source = "./2_UserManagement"
+}
