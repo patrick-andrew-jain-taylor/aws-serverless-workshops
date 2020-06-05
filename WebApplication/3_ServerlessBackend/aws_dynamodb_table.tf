@@ -3,7 +3,7 @@ resource "aws_dynamodb_table" "this" {
   hash_key = "RideId"
 
   attribute {
-    name = "hash_key"
+    name = "RideId"
     type = "S"
   }
 }
